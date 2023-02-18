@@ -164,3 +164,15 @@
 #ellipse{
     display: none;
 }
+
+
+@media screen and (max-width: 576px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .shape-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
