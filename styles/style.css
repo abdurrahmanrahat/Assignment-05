@@ -22,7 +22,7 @@
 
 #head-section {
     background-color: #E7F4FB;
-    width: 1280px;
+    
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,6 @@
 .main-container{
     display: flex;
     gap: 5px;
-    width: 1280px;
     margin: 20px auto;
 }
 
@@ -77,6 +76,7 @@
 #rhombus-shape{
     background-color: #69C7F0;
 }
+
 
 .shape-title {
     font-weight: 700;
@@ -124,7 +124,7 @@
 .calculate{
     margin-top: 10px;
     display: flex;
-    gap: 15px;
+    gap: 5px;
     align-items: center;
     /* justify-content: space-between; */
 }
@@ -174,5 +174,26 @@
     .shape-container{
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .img-div{
+        width: 200px;
+        height: 150px;
+    }
+    #head-section {
+        background-color: #E7F4FB;
+        width: 1280px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-container{
+        display: flex;
+        gap: 5px;
+        width: 1280px;
+        margin: 20px auto;
     }
 }

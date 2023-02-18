@@ -23,126 +23,131 @@
         <div class="shape-container">
             <!-- Shape Triangle -->
             <div class="shape" id="triangle-shape">
-                <img src="/images/triangle.png" alt="">
+                <div class="img-div">
+                    <img src="/images/triangle.png" alt="">
+                </div>
                 <h3 class="shape-title">Triangle</h3>
-                <p class="shape-rule">Area (A) = 0.5 <span><i class="fa-solid fa-xmark"></i></span> b <span><i class="fa-solid fa-xmark"></i></span> h</p>
+                <p class="shape-rule">Area (A) = 0.5 <span><i class="fa-solid fa-xmark"></i></span> <span id="triangle-b">b</span> <span><i class="fa-solid fa-xmark"></i></span> <span id="triangle-h">h</span></p>
                 <div class="shape-input">
-                    <input type="text" placeholder="b">
+                    <input id="triangle-input-b" type="text" placeholder="b">
                     <p>cm</p>
-                    <input type="text" placeholder="h">
+                    <input id="triangle-input-h" type="text" placeholder="h">
                     <p>cm</p>
                 </div>
-                <button class="shape-btn">Calculate</button>
+                <button id="triangle-btn" class="shape-btn">Calculate</button>
             </div>
             <!-- Shape Rectangle -->
             <div class="shape">
-                <img src="/images/rectangle.png" alt="">
+                <div class="img-div">
+                    <img src="/images/rectangle.png" alt="">
+                </div>
                 <h3 class="shape-title">Rectangle</h3>
-                <p class="shape-rule">Area (A) = w <span><i class="fa-solid fa-xmark"></i></span> l</p>
+                <p class="shape-rule">Area (A) = <span id="rectangle-w">w</span> <span><i class="fa-solid fa-xmark"></i></span> <span id="rectangle-l">l</span></p>
                 <div class="shape-input">
-                    <input type="text" placeholder="w">
+                    <input id="rectangle-input-w" type="text" placeholder="w">
                     <p>cm</p>
-                    <input type="text" placeholder="l">
+                    <input id="rectangle-input-l" type="text" placeholder="l">
                     <p>cm</p>
                 </div>
-                <button class="shape-btn">Calculate</button>
+                <button id="rectangle-btn" class="shape-btn">Calculate</button>
             </div>
             <!-- Shape Parallelogram -->
             <div class="shape">
-                <img src="/images/parallelogram.png" alt="">
+                <div class="img-div">
+                    <img src="/images/parallelogram.png" alt="">
+                </div>
                 <h3 class="shape-title">Parallelogram</h3>
-                <p class="shape-rule">Area (A) = b <span><i class="fa-solid fa-xmark"></i></span> h</p>
+                <p class="shape-rule">Area (A) = <span id="parallelogram-b">b</span> <span><i class="fa-solid fa-xmark"></i></span> <span id="parallelogram-h">h</span></p>
                 <div class="shape-input">
-                    <input type="text" placeholder="b">
+                    <input id="parallelogram-input-b" type="text" placeholder="b">
                     <p>cm</p>
-                    <input type="text" placeholder="h">
+                    <input id="parallelogram-input-h" type="text" placeholder="h">
                     <p>cm</p>
                 </div>
-                <button class="shape-btn">Calculate</button>
+                <button id="parallelogram-btn" class="shape-btn">Calculate</button>
             </div>
             <!-- Shape Rhombus -->
             <div class="shape" id="rhombus-shape">
-                <img src="/images/rhombus.png" alt="">
+                <div class="img-div">
+                    <img src="/images/rhombus.png" alt="">
+                </div>
                 <h3 class="shape-title">Rhombus</h3>
-                <p class="shape-rule">Area (A) = 0.5 <span><i class="fa-solid fa-xmark"></i></span> d<sub>1</sub> <span><i class="fa-solid fa-xmark"></i></span> d<sub>2</sub></p>
+                <p class="shape-rule">Area (A) = 0.5 <span><i class="fa-solid fa-xmark"></i></span> <span id="rhombus-d1">d<sub>1</sub></span> <span><i class="fa-solid fa-xmark"></i></span> <span id="rhombus-d2">d<sub>2</sub></span></p>
                 <div class="shape-input">
-                    <input type="text" placeholder="d1">
+                    <input id="rhombus-input-d1" type="text" placeholder="d1">
                     <p>cm</p>
-                    <input type="text" placeholder="d2">
+                    <input id="rhombus-input-d2" type="text" placeholder="d2">
                     <p>cm</p>
                 </div>
-                <button class="shape-btn">Calculate</button>
+                <button id="rhombus-btn" class="shape-btn">Calculate</button>
             </div>
             <!-- Shape Pentagon -->
             <div class="shape">
-                <img src="/images/pentagon.png" alt="">
+                <div class="img-div">
+                    <img src="/images/pentagon.png" alt="">
+                </div>
                 <h3 class="shape-title">Pentagon</h3>
-                <p class="shape-rule">Area (A) = 0.5 <span><i class="fa-solid fa-xmark"></i></span> p <span><i class="fa-solid fa-xmark"></i></span> b</p>
+                <p class="shape-rule">Area (A) = 0.5 <span><i class="fa-solid fa-xmark"></i></span> <span id="pentagon-p">p</span> <span><i class="fa-solid fa-xmark"></i></span> <span id="pentagon-b">b</span></p>
                 <div class="shape-input">
-                    <input type="text" placeholder="p">
+                    <input id="pentagon-input-p" type="text" placeholder="p">
                     <p>cm</p>
-                    <input type="text" placeholder="b">
+                    <input id="pentagon-input-b" type="text" placeholder="b">
                     <p>cm</p>
                 </div>
-                <button class="shape-btn">Calculate</button>
+                <button id="pentagon-btn" class="shape-btn">Calculate</button>
             </div>
             <!-- Shape Ellipse -->
             <div class="shape">
-                <img src="/images/ellipse.png" alt="">
+                <div class="img-div">
+                    <img src="/images/ellipse.png" alt="">
+                </div>
                 <h3 class="shape-title">Ellipse</h3>
-                <p class="shape-rule">Area (A) = <span>&pi;</span>ab</p>
+                <p class="shape-rule">Area (A) = <span>&pi;</span> <span id="ellipse-a">a</span><span id="ellipse-b">b</span></p>
                 <div class="shape-input">
-                    <input type="text" placeholder="a">
+                    <input id="ellipse-input-a" type="text" placeholder="a">
                     <p>cm</p>
-                    <input type="text" placeholder="b">
+                    <input id="ellipse-input-b" type="text" placeholder="b">
                     <p>cm</p>
                 </div>
-                <button class="shape-btn">Calculate</button>
+                <button id="ellipse-btn" class="shape-btn">Calculate</button>
             </div>
         </div>
         <div>
             <h3>Area Calculation</h3>
             <div class="calculate" id="triangle">
                 <p>1. Triangle</p>
-                <p><span>00</span>cm<sup>2</sup></p>
+                <p><span id="triangle-area">00</span>cm<sup>2</sup></p>
                 <button class="ctom-btn">Covert to m<sup>2</sup></button>
             </div>
             <div class="calculate" id="rectangle">
                 <p>2. Rectangle</p>
-                <p><span>00</span>cm<sup>2</sup></p>
+                <p><span id="rectangle-area">00</span>cm<sup>2</sup></p>
                 <button class="ctom-btn">Covert to m<sup>2</sup></button>
             </div>
             <div class="calculate" id="parallelogram">
                 <p>3. Parallelogram</p>
-                <p><span>00</span>cm<sup>2</sup></p>
+                <p><span id="parallelogram-area">00</span>cm<sup>2</sup></p>
                 <button class="ctom-btn">Covert to m<sup>2</sup></button>
             </div>
             <div class="calculate" id="rhombus">
                 <p>4. Rhombus</p>
-                <p><span>00</span>cm<sup>2</sup></p>
+                <p><span id="rhombus-area">00</span>cm<sup>2</sup></p>
                 <button class="ctom-btn">Covert to m<sup>2</sup></button>
             </div>
             <div class="calculate" id="pentagon">
                 <p>5. Pentagon</p>
-                <p><span>00</span>cm<sup>2</sup></p>
+                <p><span id="pentagon-area">00</span>cm<sup>2</sup></p>
                 <button class="ctom-btn">Covert to m<sup>2</sup></button>
             </div>
             <div class="calculate" id="ellipse">
                 <p>6. Ellipse</p>
-                <p><span>00</span>cm<sup>2</sup></p>
+                <p><span id="ellipse-area">00</span>cm<sup>2</sup></p>
                 <button class="ctom-btn">Covert to m<sup>2</sup></button>
             </div>
-
-
-            <!-- <div>
-                <p>2. Rectangle</p>
-                <p>3. Parallelogram</p>
-                <p>4. Rhombus</p>
-                <p>5. Pentagon</p>
-                <p>6. Ellipse</p>
-            </div> -->
         </div>
     </main>
+
+    <script src="/scripts/calculate.js"></script>
 </body>
 
 </html>
