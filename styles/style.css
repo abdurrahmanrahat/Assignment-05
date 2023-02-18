@@ -121,6 +121,12 @@
 
 /* area calculation */
 
+#area-title{
+    font-size: 22px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
 .calculate{
     margin-top: 10px;
     display: flex;

@@ -5,6 +5,8 @@ function randomColor() {
     }
     return 'rgb(' + color.join(', ') + ')';
   } 
+
+  
   
 document.getElementById('triangle-shape').addEventListener('mouseover', function(){
     document.getElementById('triangle-shape').style.backgroundColor = randomColor();
