@@ -122,3 +122,9 @@ document.getElementById('ellipse-btn').addEventListener('click', function(){
 
     setOnElement('ellipse-area', ellipseArea);
 })
+
+// Work on Blog button for moving blog.html by using function
+document.getElementById('head-btn').addEventListener('click', function(){
+    location.href = "blog.html";
+})
+
