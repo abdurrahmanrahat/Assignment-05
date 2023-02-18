@@ -26,9 +26,19 @@ function setOnElement(inputId, inputValue){
 // Triangle button event listener
 document.getElementById('triangle-btn').addEventListener('click', function(){
     const triangleInputBValue = getInputValue('triangle-input-b');
-    setOnElement('triangle-b', triangleInputBValue)
-
     const triangleInputHValue = getInputValue('triangle-input-h');
+
+    // Validation
+    if(triangleInputBValue < 0 || triangleInputHValue < 0){
+        alert("Please input a valid number");
+        return;
+    }
+    else if(isNaN(triangleInputBValue) || isNaN(triangleInputHValue)){
+        alert("no bro! Input your number");
+        return;
+    }
+
+    setOnElement('triangle-b', triangleInputBValue);
     setOnElement('triangle-h', triangleInputHValue);
 
     const triangleArea = 0.5 * triangleInputBValue * triangleInputHValue;
@@ -43,9 +53,19 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
 // Rectangle button event listener
 document.getElementById('rectangle-btn').addEventListener('click', function(){
     const rectangleInputWValue = getInputValue('rectangle-input-w');
-    setOnElement('rectangle-w', rectangleInputWValue);
-
     const rectangleInputLValue = getInputValue('rectangle-input-l');
+
+    // Validation
+    if(rectangleInputWValue < 0 || rectangleInputLValue < 0){
+        alert("Please input a valid number");
+        return;
+    }
+    else if(isNaN(rectangleInputWValue) || isNaN(rectangleInputLValue)){
+        alert("no bro! Input your number");
+        return;
+    }
+
+    setOnElement('rectangle-w', rectangleInputWValue);
     setOnElement('rectangle-l', rectangleInputLValue);
 
     const rectangleArea = rectangleInputWValue * rectangleInputLValue;
@@ -127,4 +147,5 @@ document.getElementById('ellipse-btn').addEventListener('click', function(){
 document.getElementById('head-btn').addEventListener('click', function(){
     location.href = "blog.html";
 })
+
 
