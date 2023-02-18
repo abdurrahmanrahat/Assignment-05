@@ -1,5 +1,166 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@400;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* -------------------------
+     head section 
+     ----------------------*/
+#logo {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 28px;
+}
+
+#sub-logo {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#head-section {
+    background-color: #E7F4FB;
+    width: 1280px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#head-btn {
+    background-color: #1090D8;
+    border-radius: 8px;
+    width: 110px;
+    height: 44px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Main container */
+
+.main-container{
+    display: flex;
+    gap: 5px;
+    width: 1280px;
+    margin: 20px auto;
+}
+
+
+.shape-container{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.shape{
+    padding: 50px;
+    text-align: center;
+}
+
+.shape img{
+    width: 80%;
+}
+
+
+/* -----------------
+    Shape Section 
+    -------------------*/
+
+#triangle-shape{
+    background-color: #FBBCED;
+}
+
+#rhombus-shape{
+    background-color: #69C7F0;
+}
+
+.shape-title {
+    font-weight: 700;
+    font-size: 25px;
+    color: #414141;
+    
+    margin: 8px 0 4px 0;
+}
+
+.shape-rule {
+    font-weight: 400;
+    font-size: 16px;
+    color: #414141;
+}
+
+.shape-input {
+    display: flex;
+    gap: 5px;
+    /* width: 50px; */
+    padding: 25px;
+    font-size: 18px;
+}
+
+.shape-input input {
+    background-color: #F1F1F1;
+    border: none;
+    padding: 6px;
+    width: 30%;
+    font-weight: 700;
+}
+
+.shape-btn {
+    background-color: #1090D8;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* area calculation */
+
+.calculate{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.ctom-btn{
+    width: 100px;
+    height: 32px;
+    background-color: #1090D8;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+/* display none */
+
+#triangle{
+    display: none;
+}
+
+#rectangle{
+    display: none;
+}
+
+#parallelogram{
+    display: none;
+}
+
+#rhombus{
+    display: none;
+}
+
+#pentagon{
+    display: none;
+}
+
+#ellipse{
+    display: none;
 }
